@@ -1,0 +1,109 @@
+@import url('https://fonts.googleapis.com/css2?family=Carme&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@600&display=swap');
+* {
+	margin:0;
+	padding:0;
+  box-sizing: border-box;
+}
+
+body {
+	background-color:#0f0c24
+}
+nav #ule {
+	background-color:#0f0c24;
+	width:100%;
+	height:40px;
+	min-height:40px;
+	padding:0;
+	display:flex;
+	border-bottom:3px solid #a350a3;
+}
+
+.nav-text{
+	margin:10px;
+	text-transform: uppercase;
+	font-size:20px;
+	margin-top:5px;
+	display:relative;
+	color: white;
+	font-family: 'Poppins', sans-serif;
+	text-decoration:none;
+}
+.wall {
+	height:180px;
+	width:100%;
+	background-repeat:no-repeat;
+	background-position: center center;
+	background-image:url('https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fi.ya-webdesign.com%2Fimages%2Fnyan-cat-gif-png.gif&f=1&nofb=1');
+	border-bottom:3px solid #a350a3;
+}
+
+.columns {
+	display: flex;
+	flex-flow: row wrap;
+	justify-content: center;
+	margin: 5px 0;
+}
+
+.column {
+	border: 2px solid #a350a3;
+	flex: 1;
+	margin-left: 2px;
+	padding: 10px;
+	&:first-child { margin-left: 0; }
+	&:last-child { margin-right: 0; }
+	
+}
+
+.column h2{
+	font-size:30px;
+	text-align:center;
+	color:#c1436d;
+	font-family: 'Montserrat', sans-serif;
+}
+.column p {
+	color:white;
+	font-size:19px;
+	font-family: 'Carme', sans-serif;
+}
+
+.wrapper {
+	padding: 5px;
+	max-width: 960px;
+	width: 95%;
+	margin: 60px auto;
+}
+
+footer h3{
+	color:#DBDBDB;
+	text-align:center;
+	font-family: 'Montserrat', sans-serif;
+	font-size:15px
+}
+footer p{
+	text-align:center;
+	color:#9E9E9E;
+	font-size:11px;
+	padding-bottom:15px;
+}
+@media screen and (max-width: 980px) {
+  .columns .column {
+		margin-bottom: 5px;
+    flex-basis: 40%;
+		&:nth-last-child(2) {
+			margin-right: 0;
+		}
+		&:last-child {
+			flex-basis: 100%;
+			margin: 0;
+		}
+	}
+}
+
+@media screen and (max-width: 680px) {
+	.columns .column {
+		flex-basis: 100%;
+		margin: 0 0 5px 0;
+	}
+}
