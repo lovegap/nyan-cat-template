@@ -1,6 +1,6 @@
 # Nyan Cat Style
 
-template de nyan gato :V
+template responsivo de nyan gato.
 
 
 ## Screenshot
