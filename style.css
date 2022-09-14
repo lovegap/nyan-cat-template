@@ -4,9 +4,15 @@
 * {
 	margin:0;
 	padding:0;
-  box-sizing: border-box;
+  	box-sizing: border-box;
 }
 
+a {
+	margin-left:10px;
+	text-decoration: none;
+	color: white;
+	font-family: 'Carme', sans-serif;
+}
 body {
 	background-color:#0f0c24
 }
@@ -15,6 +21,7 @@ nav #ule {
 	width:100%;
 	height:40px;
 	min-height:40px;
+	margin-top:10px;
 	padding:0;
 	display:flex;
 	border-bottom:3px solid #a350a3;
@@ -107,3 +114,4 @@ footer p{
 		margin: 0 0 5px 0;
 	}
 }
+
